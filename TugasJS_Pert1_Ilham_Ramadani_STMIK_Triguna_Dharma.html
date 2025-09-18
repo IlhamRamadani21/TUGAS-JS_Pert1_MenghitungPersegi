@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h2>TUGAS Menghitung luas dari persegi panjang, bujur sangkar dan segitiga menggunakan variabel dan operator</h2>
+      <hr />
+      <h3>Ketentuan :</h3>
+
+      <p>
+         Tulis kode JavaScript dalam 1 file HTML Nilai dari parameter/argumen bebas (nilai sisi, panjang, tinggi) Terdapat keterangan penjelasan berupa komentar tiap fungsi <br />
+         <br />Jawabannya ada Di console
+      </p>
+
+      <script>
+         /**
+          * Menghitung luas persegi panjang menggunakan panjang dan lebar.
+          * Panjang dari persegi panjang.
+          * Lebar dari persegi panjang.
+          */
+         function hitungLuasPersegiPanjang(panjang, lebar) {
+            // Operator perkalian (*) untuk menghitung luas.
+            let luas = panjang * lebar;
+
+            console.log("--- LUAS PERSEGI PANJANG ---");
+            console.log(`Panjang: ${panjang}`);
+            console.log(`Lebar: ${lebar}`);
+            console.log(`Luas: ${luas}`);
+            console.log("----------------------------");
+         }
+
+         // --- Fungsi untuk Menghitung Luas Bujur Sangkar (Persegi) ---
+         /**
+          * luas bujur sangkar (persegi) dengan panjang sisi.
+          * sisi - Panjang sisi dari bujur sangkar.
+          */
+         function hitungLuasBujurSangkar(sisi) {
+            // Operator perkalian (*) Karena sisi-sisi sama, cukup dikalikan dengan dirinya sendiri.
+            let luas = sisi * sisi;
+
+            console.log("--- LUAS BUJUR SANGKAR ---");
+            console.log(`Sisi: ${sisi}`);
+            console.log(`Luas: ${luas}`);
+            console.log("----------------------------");
+         }
+
+         // --- Fungsi untuk Menghitung Luas Segitiga ---
+         /**
+          * Rumus: 1/2 * alas * tinggi.
+          * alas - Panjang alas segitiga.
+          * tinggi - Tinggi segitiga.
+          */
+         function hitungLuasSegitiga(alas, tinggi) {
+            // Operator perkalian (*) dan pembagian (/) digunakan.
+            let luas = 0.5 * alas * tinggi;
+
+            console.log("--- LUAS SEGITIGA ---");
+            console.log(`Alas: ${alas}`);
+            console.log(`Tinggi: ${tinggi}`);
+            console.log(`Luas: ${luas}`);
+            console.log("----------------------");
+         }
+
+         // --- Contoh Penggunaan Fungsi ---
+
+         // Menjalankan fungsi untuk menghitung luas persegi panjang dengan panjang 10 dan lebar 5
+         hitungLuasPersegiPanjang(10, 5);
+
+         // Menjalankan fungsi untuk menghitung luas bujur sangkar dengan sisi 8
+         hitungLuasBujurSangkar(8);
+
+         // Menjalankan fungsi untuk menghitung luas segitiga dengan alas 12 dan tinggi 7
+         hitungLuasSegitiga(12, 7);
+      </script>
+   </body>
+</html>
